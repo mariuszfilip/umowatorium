@@ -1,0 +1,10 @@
+<script language="javascript" type="text/javascript" src="<?php echo myURL ?>/js/import/ContainerLog.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo myURL ?>/js/import/ContainerDrawing.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo myURL ?>/js/import/ImportEdit.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo myURL ?>/js/import/Files.js"></script>
+<script type="text/javascript">
+    Layout = MainMenu.getLayoutContent();
+    MainMenu.MarbleLayoutText('import');
+    ImportEditPanel(Layout,<?php echo $this->id ?>);
+    
+</script>

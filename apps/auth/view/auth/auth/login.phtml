@@ -1,0 +1,47 @@
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('auth',array(
+'action'     => 'authenticate',
+    )
+));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+
+?>
+
+<div class="container">
+    <h1>Logowanie</h1>
+        <?php
+		if ($this->messages){
+                echo '<ul>';
+                foreach($this->messages as $message)
+                {
+                    echo '<li>'.$message.'</li>';
+                }
+                echo '</ul>';
+
+        }
+
+		?>
+
+    <form role="form">
+        <div class="form-group">
+            <label for="exampleInputEmail1"><?php echo $this->formLabel($form->get('login')) ?></label>
+            <?php echo $this->formElement($form->get('login')) ?>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1"><?php echo $this->formLabel($form->get('password')) ?></label>
+            <?php echo $this->formElement($form->get('password')) ?>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+
+
+</div>
+<?php
+echo $this->form()->closeTag();
+?>
+
