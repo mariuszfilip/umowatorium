@@ -28,7 +28,6 @@ class IndexController extends AbstractActionController
 
     public function indexAction() {
 
-
         if ( $this->getRequest()->isXmlHttpRequest() ) {
             $sm = $this->getServiceLocator();
             $oFormModel = $sm->get('FormsElementTable');
