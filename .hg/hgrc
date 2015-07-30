@@ -1,0 +1,4 @@
+[paths]
+default = http://71.172.147.19:81/
+[web]
+push_ssl = False

@@ -1,0 +1,11 @@
+glob:.idea/.name
+glob:.idea/dictionaries/admin.xml
+glob:.idea/encodings.xml
+glob:.idea/libraries/sass_stdlib.xml
+glob:.idea/misc.xml
+glob:.idea/modules.xml
+glob:.idea/pablo.iml
+glob:.idea/scopes/scope_settings.xml
+glob:.idea/vcs.xml
+glob:.idea/workspace.xml
+glob:inc/config.inc.php

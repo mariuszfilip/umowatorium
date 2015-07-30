@@ -13,8 +13,9 @@
 
 return array(
     'db' => array(
-        'driver' => 'Pdo',
-        'dsn'            => 'mysql:dbname=anialuniewsk_1;host=sql.anialuniewsk.nazwa.pl',
+        'driver' => 'Pdo_Mysql',
+        'database'            => 'anialuniewsk_1',
+        'hostname'            => 'sql.anialuniewsk.nazwa.pl',
         'username'       => 'anialuniewsk_1',
         'password'       => '9k9jR_BZ1',
         'port'           => '3307',
